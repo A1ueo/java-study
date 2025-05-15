@@ -5,7 +5,7 @@ public class IfDiceExample {
 	public static void main(String[] args) {
 		int num = (int) (Math.random() * 6) + 1;
 
-		System.out.println(Math.random()); // 0.0 이상 1.0 미만의 임의의 실수값을 반환
+		// System.out.println(Math.random()); // 0.0 이상 1.0 미만의 임의의 실수값을 반환
 		// 0.0 <= Math.random() < 1.0 사이의 double형 실수값
 		// 0.0 <= Math.random() * 6 < 6.0 사이의 double형 실수값
 		// 0 <= (int) (Math.random() * 6) < 6 사이의 int형 정수값
