@@ -1,10 +1,10 @@
 package sec01.exam03;
 
-import java.util.Scanner;
+import java.io.IOException;
 
 public class IfElseIfElseExample {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		int score = 93;
 
 		if (score >= 90) {
@@ -34,14 +34,14 @@ public class IfElseIfElseExample {
 //		  a  => 소문자
 //		  0  => 숫자
 //		  가  => 기타문자
+
 		System.out.print("문자를 입력하세요: ");
-		Scanner sc = new Scanner(System.in);
-		char c = sc.nextLine().charAt(0);
-		sc.close();
-		if (c >= 'a' && c <= 'z') {
-			System.out.println("소문자 입니다.");
-		} else if (c >= 'A' && c <= 'Z') {
+		char c = (char) System.in.read();
+
+		if (c >= 'A' && c <= 'Z') {
 			System.out.println("대문자 입니다.");
+		} else if (c >= 'a' && c <= 'z') {
+			System.out.println("소문자 입니다.");
 		} else if (c >= '0' && c <= '9') {
 			System.out.println("숫자 입니다.");
 		} else {
