@@ -6,12 +6,12 @@ public class Homework05 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("국어: ");
-        int kor = sc.nextInt();
+        double kor = sc.nextDouble();
         System.out.print("영어: ");
-        int eng = sc.nextInt();
+        double eng = sc.nextDouble();
         System.out.print("수학: ");
-        int math = sc.nextInt();
-        int total = kor + eng + math;
+        double math = sc.nextDouble();
+        int total = (int) (kor + eng + math);
         System.out.println("총점: " + total);
         System.out.println("평균: " + total / 3);
     }
