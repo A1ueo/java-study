@@ -1,5 +1,7 @@
 package sec02.exam07;
 
+import java.util.Scanner;
+
 public class WhileSum1To100Example {
 	public static void main(String[] args) {
 		// 1부터 100까지 합
@@ -42,5 +44,33 @@ public class WhileSum1To100Example {
 			count++; 
 		} while (count < 100); // 세미콜론 필수!
 		System.out.printf("1부터 %d까지 합: %d%n", count, sum);
+
+		// Quiz: 1부터 100까지 홀수의 합
+		sum = 0;
+		count = 0;
+		while (count < 100) {
+			int num = count + 1;
+			if (num % 2 == 1)
+				sum += num;
+			count++;
+		}
+		System.out.printf("1부터 %d까지 홀수의 합: %d%n", count, sum);
+
+		// Quiz2
+//		화면에서 자연수를 입력받아서 각 자리수의 합을 출력하는 프로그램을 구현하시오.
+//
+//		[입력]    [출력]
+//		 123   =>  6
+//		 12345 =>  15
+		System.out.print("자연수를 입력하세요: ");
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int num = n;
+		sum= 0;
+		while (num > 0) {
+			sum += num % 10;
+			num /= 10;
+		}
+		System.out.printf("%d의 각 자리 수의 합: %d%n", n, sum);
 	}
 }
