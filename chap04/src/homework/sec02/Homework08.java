@@ -7,7 +7,7 @@ public class Homework08 {
 		Scanner sc = new Scanner(System.in);
 
 		int flag = 1;
-		do {
+		while (flag == 1) {
 			String str;
 			char c;
 			char repeat;
@@ -37,7 +37,7 @@ public class Homework08 {
 					flag = -1;
 				}
 			} while (flag == -1);
-		} while (flag == 1);
+		}
 
 		System.out.println("프로그램 종료");
 	}
