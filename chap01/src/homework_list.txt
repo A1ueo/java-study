@@ -9,3 +9,5 @@ https://devkgn24.notion.site/14afda8bae578074bad4f9c76f5f50b9
 chap04.sec01 조건문 과제
 https://devkgn24.notion.site/14bfda8bae5780a192eddf35bfe9f3fe
 
+chap04.sec02 반복문 과제
+https://devkgn24.notion.site/14cfda8bae578057991edf04f0f14832
