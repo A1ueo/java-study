@@ -12,7 +12,7 @@ public class Homework05 {
 			System.out.print("숫자(0을 입력하면 종료): ");
 			n = sc.nextInt();
 			if (n > 0)
-			sum += n;
+				sum += n;
 		} while (n != 0);
 		System.out.printf("양수의 합계: %d%n", sum);
 

@@ -11,7 +11,7 @@ public class Homework04 {
 			System.out.println("게임을 실행합니다!");
 			System.out.println("게임을 다시 플레이하시겠습니까?(yes/no)");
 			str = sc.nextLine();
-		} while (!str.equals("no"));
+		} while (!"no".equals(str));
 		System.out.println("게임을 종료합니다.");
 	}
 

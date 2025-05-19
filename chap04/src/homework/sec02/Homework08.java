@@ -28,7 +28,7 @@ public class Homework08 {
 				System.out.print("다시 입력하시겠습니까?: ");
 				repeat = sc.nextLine().charAt(0);
 
-				if (repeat == 'n' || repeat == 'N') {
+				if (repeat == 'n' || repeat == 'N') { // str.equalsIgnoreCase()
 					flag = 0;
 				} else if (repeat == 'y' || repeat == 'Y') {
 					flag = 1;

@@ -1,0 +1,33 @@
+package homework;
+
+import java.util.Scanner;
+
+public class Homework03 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n;
+		do {
+			System.out.print("정수: ");
+			n = sc.nextInt();
+			if (!(n >= 3 && n % 2 == 1))
+				System.out.println("다시 입력하세요.");
+		} while (!(n >= 3 && n % 2 == 1));
+		int[] arr = new int[n];
+		int count = 0;
+		for (int i = 0; i < n; i++) {
+			if (i > n / 2) {
+				arr[i] = --count;
+			} else {
+				arr[i] = ++count;
+			}
+		}
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i]);
+			if (i < arr.length - 1)
+				System.out.print(", ");
+		}
+
+	}
+
+}
