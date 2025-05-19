@@ -8,6 +8,7 @@ public class Homework04 {
 		int[] arr = new int[5];
 		for (int i = 0; i < 5;) {
 			int tmp = (int) (Math.random() * 45) + 1;
+
 			boolean isInArr = false;
 			for (int num : arr) {
 				if (tmp == num)
@@ -15,6 +16,7 @@ public class Homework04 {
 			}
 			if (isInArr)
 				continue;
+
 			arr[i++] = tmp;
 		}
 		Arrays.sort(arr);

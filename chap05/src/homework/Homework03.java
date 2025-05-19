@@ -10,9 +10,10 @@ public class Homework03 {
 		do {
 			System.out.print("정수: ");
 			n = sc.nextInt();
-			if (!(n >= 3 && n % 2 == 1))
+			if (n % 2 == 0 || n < 3)
 				System.out.println("다시 입력하세요.");
-		} while (!(n >= 3 && n % 2 == 1));
+		} while (n % 2 == 0 || n < 3);
+
 		int[] arr = new int[n];
 		int count = 0;
 		for (int i = 0; i < n; i++) {
@@ -22,6 +23,7 @@ public class Homework03 {
 				arr[i] = ++count;
 			}
 		}
+
 		for (int i = 0; i < arr.length; i++) {
 			System.out.print(arr[i]);
 			if (i < arr.length - 1)

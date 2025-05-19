@@ -15,7 +15,7 @@ public class Homework05 {
 			System.out.print("가위바위보: ");
 			str = sc.nextLine();
 			if ("stop".equals(str)) {
-				System.out.printf("%d전 %d승 %d무 %d패", count, win, draw, lose);
+				System.out.printf("%d전 %d승 %d무 %d패%n", count, win, draw, lose);
 				break;
 			} else {
 				boolean isInChoices = false;
@@ -42,7 +42,7 @@ public class Homework05 {
 					System.out.println();
 					count++;
 				} else {
-					System.out.println("잘못 입력하셨습니다.");
+					System.out.println("잘못 입력하셨습니다.\n");
 				}
 			}
 		}
