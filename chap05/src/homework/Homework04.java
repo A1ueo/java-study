@@ -11,8 +11,10 @@ public class Homework04 {
 
 			boolean isInArr = false;
 			for (int num : arr) {
-				if (tmp == num)
+				if (tmp == num) {
 					isInArr = true;
+					break;
+				}
 			}
 			if (isInArr)
 				continue;

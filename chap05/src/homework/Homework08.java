@@ -13,11 +13,15 @@ public class Homework08 {
 		}
 		System.out.print("어제 메뉴판: ");
 		for (String str : menu) {
-			System.out.print(str + ", ");
+			if (str != menu[0])
+				System.out.print(", ");
+			System.out.print(str);
 		}
 		System.out.print("\n오늘 메뉴판: ");
 		for (String str : newMenu) {
-			System.out.print(str + ", ");
+			if (str != newMenu[0])
+				System.out.print(", ");
+			System.out.print(str);
 		}
 
 	}

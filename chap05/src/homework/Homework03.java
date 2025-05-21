@@ -17,11 +17,12 @@ public class Homework03 {
 		int[] arr = new int[n];
 		int count = 0;
 		for (int i = 0; i < n; i++) {
-			if (i > n / 2) {
-				arr[i] = --count;
-			} else {
-				arr[i] = ++count;
-			}
+//			if (i > n / 2) {
+//				arr[i] = --count;
+//			} else {
+//				arr[i] = ++count;
+//			}
+			arr[i] = (i > n / 2) ? --count : ++count;
 		}
 
 		for (int i = 0; i < arr.length; i++) {
