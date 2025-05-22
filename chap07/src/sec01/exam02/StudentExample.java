@@ -1,4 +1,4 @@
-package chap07.sec01.exam02;
+package sec01.exam02;
 
 public class StudentExample {
 

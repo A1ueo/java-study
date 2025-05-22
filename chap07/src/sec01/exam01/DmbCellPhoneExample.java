@@ -1,4 +1,4 @@
-package chap07.sec01.exam01;
+package sec01.exam01;
 
 public class DmbCellPhoneExample {
 

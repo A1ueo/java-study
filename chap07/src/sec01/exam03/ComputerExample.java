@@ -1,4 +1,4 @@
-package chap07.sec01.exam03;
+package sec01.exam03;
 
 public class ComputerExample {
 

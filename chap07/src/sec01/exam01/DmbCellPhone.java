@@ -1,4 +1,4 @@
-package chap07.sec01.exam01;
+package sec01.exam01;
 
 // 자식 클래스: 일반적인 특성은 물려받고 추가로 자식만이 갖고 있는 멤버(필드, 메소드) 작성
 // 여기서는 CellPhone을 확장하여 DMB 기능만 추가된 클래스

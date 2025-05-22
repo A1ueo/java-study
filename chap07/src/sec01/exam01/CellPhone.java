@@ -1,4 +1,4 @@
-package chap07.sec01.exam01;
+package sec01.exam01;
 
 // 부모 클래스: 공통의 일반적인 특성들을 작성
 public class CellPhone {
