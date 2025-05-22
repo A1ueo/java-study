@@ -26,6 +26,6 @@ public class Rectangle {
 		System.out.println("1. 사격형의 둘레");
 		System.out.println(CalculateRound() + "cm");
 		System.out.println("2. 사격형의 넓이");
-		System.out.println(CalculateArea() + "cm");
+		System.out.println(CalculateArea() + "cm^2");
 	}
 }
