@@ -14,6 +14,7 @@ public class Car {
 		System.out.println("[자동차가 달립니다.]");
 
 		// 어떤 객체를 참조하냐에 따라 roll()의 실행 결과는 달라짐 => 다형성
+		// 순차로 돌다가 멈춰버림
 		if (frontLeftTire.roll() == false) {
 			stop();
 			return 1;
