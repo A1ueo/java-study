@@ -18,6 +18,7 @@ public class Run {
 
 		for (Actionable r : robot) {
 			r.action();
+			System.out.println(robot);
 		}
 	}
 
