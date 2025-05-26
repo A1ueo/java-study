@@ -28,6 +28,7 @@ public class Cake {
 		this.cream = cream;
 	}
 
+	@Override
 	public String toString() {
 		return String.format("밀가루: %.1f(g)%n크림: %.1f(g)", flour, cream);
 	}
