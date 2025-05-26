@@ -40,11 +40,11 @@ public class Run {
 
 		for (Animal animal : animalArr) {
 			// Quiz
-			System.out.printf("%s, 다리 수: %d개%n", animal.getKind(), animal.getLeg());
+			System.out.printf("%s, 다리수: %d개%n", animal.getKind(), animal.getLeg());
 			animal.sound();
 			animal.eat();
-			if (animal instanceof Eagle eagle)
-				eagle.fly();
+			if (animal instanceof Flyable flyable)
+				flyable.fly();
 		}
 
 	}
