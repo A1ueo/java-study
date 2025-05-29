@@ -1,4 +1,4 @@
-package sec01.quiz_string;
+package sec01.exam22_quiz_string;
 
 import java.util.Scanner;
 
