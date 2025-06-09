@@ -1,5 +1,9 @@
 package sec03.exam03.quiz;
 
+import java.io.File;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class Quiz1 {
 	// Quiz
 //	C 드라이브 아래에 test\sub 폴더를 생성하세요.
@@ -18,7 +22,21 @@ public class Quiz1 {
 //	이미 존재하는 폴더
 	
 	public static void main(String[] args) {
+		LocalDateTime dateTime = LocalDateTime.now();
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy\\MM\\dd\\");
+		String dirPath = "C:\\test\\sub\\" + dateTime.format(formatter);
+		
+//		String subPath = String.format("%d%02d%02d", dateTime.getYear(), dateTime.getMonthValue(), dateTime.getDayOfMonth());
+		
+		File dir = new File(dirPath);
+		if (dir.exists()) {
+			System.out.println("이미 존재하는 폴더");
+		} else {
+			if(dir.mkdirs())
+				System.out.println("폴더 생성 성공");
+			else
+				System.out.println("폴더 생성 실패");
+		}
 		
 	}
-
 }
