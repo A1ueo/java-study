@@ -43,7 +43,7 @@ public class BoardDAO extends JDBConnection {
 				board.setNo(rs.getInt("no"));
 				board.setTitle(rs.getString("title"));
 				board.setWriter(rs.getString("writer"));
-				board.setContent(rs.getString("contetnt"));
+				board.setContent(rs.getString("content"));
 				board.setRegDate(rs.getObject("reg_date", LocalDateTime.class));
 //				board.setRegDate(rs.getTimestamp("reg_date").toLocalDateTime());
 				board.setUpdDate(rs.getObject("upd_date", LocalDateTime.class));

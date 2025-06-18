@@ -23,6 +23,12 @@ VALUE
   ('게시글 제목1', '홍길동', '집에 가고 싶다.');
 
 
+INSERT INTO board (title, writer, content)
+VALUES
+  ('게시글 제목2', '철수', '안녕하세요.'), 
+  ('게시글 제목3', '영희', '반갑습니다.');
+
+
 SELECT * FROM board;
 SELECT * FROM board WHERE no = 1;
 

@@ -6,10 +6,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.Scanner;
 
 public class JDBConnection {
-	Scanner sc = new Scanner(System.in);
+//	Scanner sc = new Scanner(System.in);
 	// JDBC를 사용할 때 기본 구성
 	// 1. JDBC 드라이버: 
 	// 자바와 특정 데이터베이스(DBMS)가 서로 통신할 수 있게 해줌
@@ -55,8 +54,8 @@ public class JDBConnection {
 //		String url = "jdbc:mysql://localhost:3306/jdbc_board?serverTimezone=Asia/Seoul&useSSL=false";
 		String url = "jdbc:mysql://localhost:3306/jdbc_board";
 		String id = "root";
-		System.out.print("pw 입력: ");
-		String pw = sc.nextLine();
+//		System.out.print("pw 입력: ");
+		String pw = "ssj123"; //sc.nextLine();
 		
 		try {
 			// DriverManager: 자바 프로그램을 JDBC 드라이버에 연결시켜주는 클래스
