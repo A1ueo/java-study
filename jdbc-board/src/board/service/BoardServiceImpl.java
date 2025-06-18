@@ -22,4 +22,43 @@ public class BoardServiceImpl implements BoardService {
 		return boardList;
 	}
 
+	@Override
+	public Board select(int no) {
+		// 게시글 번호(no)를 DB로 넘겨주고 게시글 정보 요청
+		Board board = boardDAO.select(no);
+		
+		return board;
+	}
+
+	@Override
+	public int insert(Board board) {
+		// 게시글 정보를 전달하여 DB에 데이터 등록 요청
+		int result = boardDAO.insert(board);
+		// 적용된 데이터 개수를 반환
+		// 0: 데이터 등록 실패
+		// 1: 데이터 등록 성공
+		
+		if (result > 0) System.out.println("데이터 등록 성공!");
+		else System.out.println("데이터 등록 실패!");
+		
+		return result;
+	}
+
+	@Override
+	public int update(Board board) {
+		int result = boardDAO.update(board);
+		
+		if (result > 0) System.out.println("데이터 수정 성공!");
+		else System.out.println("데이터 수정 실패!");
+		
+		return result;
+	}
+
+	@Override
+	public int delete(int no) {
+		int result = boardDAO.delete(no);
+		
+		return result;
+	}
+
 }
