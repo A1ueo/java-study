@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>jdbc-board</name>
+	<name>bookstore</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -16,7 +16,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1750315646760</id>
+			<id>1750391123229</id>
 			<name></name>
 			<type>30</type>
 			<matcher>
